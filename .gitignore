@@ -1,8 +1,13 @@
 .vs/
 bin/
 obj/
+TestResults/
+
 .idea/
 *.bin
+
+.git/
+.gitignore/
 
 junit5all.jar
 *.class
