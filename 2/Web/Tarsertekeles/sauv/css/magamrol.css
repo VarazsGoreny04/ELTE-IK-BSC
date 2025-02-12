@@ -1,0 +1,17 @@
+main a {
+    color: #0000EE;
+    text-decoration: underline;
+}
+
+main a:visited {
+    color: #8300ee;
+    text-decoration: underline;
+}
+
+#focim {
+    text-align: center;
+}
+
+figure img {
+    max-width: 100%;
+}

@@ -1,0 +1,14 @@
+Hivatkozási helyfüggetlenség: A kódon belül nem kötött a függvények hivatkozásának sorrendje
+
+Minta:			Az adat valamilyen tulajdonságára vonatkozó illesztés
+
+Totális:		A függvény a teljes értelmezési tartományon értelmezve van
+
+Parciális:		A függvénynek tudunk olyan értéket adni, amire nincs értelmezve
+
+Generátor:		Egy adathalmazt előre megadott metrikák/szabályok alapján generáló szerkezet
+
+Bináris operátor:	Kétparaméteres operátor
+Unáris operátor:	Egyparaméteres operátor
+
+Ad-hoc polimorfizmus:	Egy függvénynek sok különböző implementációja van, amelyeket egyenként specifikálnak néhány különböző típus és kombinációja számára

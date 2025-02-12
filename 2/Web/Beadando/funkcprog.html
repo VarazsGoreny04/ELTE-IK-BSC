@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>FunkcProg - Gólyafészek</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/styleswitcher.js"></script>
+    <script src="https://kit.fontawesome.com/36d9bec083.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/normal.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="./css/capital.css" title="capital">
+    <style>
+        html {
+            background-image: url('./backgrounds/funkcprog.png');
+        }
+
+        h2,
+        summary {
+            color: #67a4ff;
+        }
+
+        div.navbar a:hover,
+        div.navbar a:focus,
+        div.navbar_link-toggle:hover,
+        div.navbar_link-toggle:focus {
+            color: #2a0069;
+            background-color: #b65fef;
+        }
+
+        .key,
+        .navbar_link a.key {
+            color: #fd78ff;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="jump_to-content">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+
+        <div class="navbar">
+            <div class="navbar_link navbar_home-page">
+                <a href="./index.html"><i class="fa-solid fa-house fa-2xl"></i></a>
+            </div>
+            <div class="navbar_link navbar_link-toggle">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <script src="./scripts/navbar.js"></script>
+            </div>
+            <nav class="navbar_items">
+                <div class="navbar_link">
+                    <a href="./progalap.html">ProgAlap</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./funkcprog.html" class="key">FunkcProg</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./matalap.html">MatAlap</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./form.html">Üzenőfal</a>
+                </div>
+            </nav>
+        </div>
+
+
+        <nav id="visualhelp">
+            <a id="capital" href="#" onclick="setActiveStyleSheet('capital'); return false;">A+</a>
+            <a id="normal" href="#" onclick="setActiveStyleSheet('normal'); return false;">A-</a>
+        </nav>
+    </header>
+
+
+    <main id="content">
+        <h1>Funkcionális programozás, avagy funkcprog</h1>
+
+
+        <article>
+            <h2>Mi is ez a tárgy?</h2>
+
+            <figure class="float">
+                <a href="./media/haskell_logo.png"><img id="logo" src="./media/haskell_logo-thumbnail.png"
+                        alt="A Haskell nyelv logója"></a>
+                <figcaption>A <span lang="en">Haskell</span> nyelv logója</figcaption>
+            </figure>
+
+            <p>
+                A funkcionális programozás órák alkalmával megismerheted a <span class="key" lang="en">Haskell</span>
+                nyelv alapjait. Ez a fajta programozási nyelvcsoport teljesen más gondolkodást igényel, mint imperatív
+                társai. Emiatt általában rengeteg fejfájást okoz a gólyáknak az, hogy ráérezzenek. Rövid, tömör
+                szintaktikával dolgozik, hiszen a nyelv 99%-ban <span class="key">függvényekből</span> áll. Aztán ott
+                vannak a monádok...
+            </p>
+            <p>
+                De ne szaladjunk ennyire előre, lássuk mit is érdemes már a kezdetektől fogva tudni a tárgyról.
+            </p>
+        </article>
+
+
+        <figure class="stay">
+            <a href="./media/haskell_monad.png"><img src="./media/haskell_monad-thumbnail.png"
+                    alt="Meme a monádokkal"></a>
+        </figure>
+
+
+        <article class="break">
+            <h2>Még az első óra előtt:</h2>
+            <p>
+                Tapasztalataim alapján az előadás nagyon gyorsan belevág a dolgok közepébe, mi meg csak pislogtunk, hogy
+                még meg sem volt az első gyakorlatunk, már elvárják, hogy értsük mi van a táblán. Ilyen helyzetben nem
+                kell aggódni. A gyakorlat szépen lassan, az alapoktól fog haladni. És ez a lényegesebb! Itt kell
+                megértenetek mindent, amit mond a tanár. Ha úgy érzed, nem megy egyedül, üljetek le páran a csoportodból
+                vagy a barátaid közül és beszéljétek át, hogy mi is hangzott el.
+            </p>
+            <p>
+                Nehogy azt hidd, csak tippeket adok ezen az oldalon. Minden fontos oldal, kód és jegyzet, amiből én is
+                tanultam megtalálható az oldal alján, hogy ennyivel is kevesebb gondod legyen. Persze ezen idő alatt
+                változhatott a tananyag, szóval ne vedd készpénznek, amit itt leírok, de abban biztos vagyok, hogy egy
+                stabil adatforrás lesz ez számodra.
+            </p>
+        </article>
+
+
+        <figure class="float">
+            <a href="./media/haskell_astronaut.png"><img src="./media/haskell_astronaut-thumbnail.png"
+                    alt="Meme a Haskell nyelv felépítésével kapcsolatban"></a>
+        </figure>
+
+
+        <article>
+            <h2>"Jó lett volna tudni előre" dolgok:</h2>
+            <p>
+                Létezik a <span lang="en">Visual Studio Code</span>-on belül egy <span class="key" lang="en">Github
+                    Copilot</span> nevű <span lang="en">AI extension</span>. Nem ajánlott használni, mert nem tanulod
+                meg tőle a nyelvet, de ha utolsó pillanatos házi leadásról van szó, életmentő lehet. A netet kutatja
+                kódok után és mindent belerak az adatbázisába. Van az úgy, hogy a tanár is <span
+                    lang="en">Github</span>-on tartja a kódjait, ilyenkor a függvény nevének a beírása és a tab
+                lenyomása elég a feladat megoldásához.
+            </p>
+        </article>
+
+
+        <div class="overflow break">
+            <table>
+                <caption>
+                    <details open>
+                        <summary>Dr. Horváth Zoltán tanár úr "HáZé" jegyzetei:</summary>
+                        Az előadáson vetített diasorok és jegyzetek.
+                    </details>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Tartalom</th>
+                        <th>Megjegyzés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="./files/notes/funkc_nyolckiralyno.pdf">Nyolc királynő</a></td>
+                        <td>Hogyan is lehet <span lang="en">Haskell</span> nyelvben kiszámolni, hogy egy
+                            sakktáblára hányféle módon rakhatunk fel 8 királynőt úgy, hogy egyik sem látja a
+                            másikat.</td>
+                        <td>Érdekes kis jegyzet lenne, ha nem rögtön ezzel nyitna az év, mert egy szót sem
+                            értettünk még belőle.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/notes/funkc_nagyjegyzet.pdf">Teljes év anyaga</a></td>
+                        <td>Végig vezet az alapoktól a középhaladó szintig úgy, hogy előre megírt függvényeken
+                            keresztül mutatja be a nyelvet.</td>
+                        <td>Remek jegyzet, amit nagyon ajánlott még előadás után is nézegetni, viszont nem ér semmit
+                            az előadáson elhangzottak nélkül.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/notes/funkc_2022-09-22_eloadas.txt">09.22-es jegyzetem</a></td>
+                        <td rowspan="2">Pár jegyzetem az előadásokról. Azért csak ennyi, mert úgyis megvan a Tanár
+                            Úré, szóval inkább csak próbáltam értelmezni, amit mondott.</td>
+                        <td rowspan="2">Tipp: A jegyzetírásról csak annyit, hogy a legtöbb tárgyból van előre megírt
+                            jegyzet, szóval inkább csak figyeljetek az órára.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/notes/funkc_2022-10-13_eloadas.txt">10.13-as jegyzetem</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="overflow">
+            <table>
+                <caption>
+                    <details open>
+                        <summary>Erdei Zsófia gyakorlati anyagai:</summary>
+                        Ez valószínűleg a leghasznosabb dokumentum, amivel szolgálni tudok.
+                    </details>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Tartalom</th>
+                        <th>Megjegyzés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="./files/notes/funkc_gyak.pdf">Gyakorlatok összefűzve</a></td>
+                        <td>Ahogy a neve is mutatja, az összeg gyakorlati anyag (fogalmak, függvények és feladatok)
+                            található meg benne pdf formátumban.</td>
+                        <td>Kicsit hiányos a feladatlapok számozása benne, de ne tévesszen meg. Benne van minden,
+                            ami kell.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <div class="overflow break">
+            <table>
+                <caption>
+                    <details open>
+                        <summary>Kódok:</summary>
+                        A gyakorlatokon/gyakorlatokra írt kódjaim. A kód minősége értelemszerűen az idő múlásával
+                        egyre jobb lett, szóval úgy kezeld.
+                    </details>
+                </caption>
+                <thead>
+                    <tr>
+                        <th>Link</th>
+                        <th>Tartalom</th>
+                        <th>Megjegyzés</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak1.hs">1. gyakorlat</a></td>
+                        <td rowspan="9">A gyakorlatokon írt összes kód. A hozzájuk tartozó feladatokat megtalálod a
+                            gyakorlati anyagok között.</td>
+                        <td rowspan="9">Nem olyan hasznos, hiszen neked is lesznek órai munkáid, de azért itt
+                            hagyom. Hátha valamire mégis jó lesz.</td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak2.hs">2. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak3.hs">3. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak4.hs">4. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak5.hs">5. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak6.hs">6. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak7.hs">7. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak8.hs">8. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_gyak9.hs">9. gyakorlat</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework1.hs">1. házi</a></td>
+                        <td rowspan="8">Ebben a részben megtalálható az összes házi feladat, amit '22-ben el kellett
+                            készítenünk. Ez főleg arra jó, hogy látsd előre, hogyan emelkedik az elvárt kódolási
+                            szint.
+                        </td>
+                        <td rowspan="8">Az 5. fájlban lévő <span lang="en">SetToMerge</span> függvény nem sikerült
+                            túl jól, nem ajánlom a másolását.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework2.hs">2. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework3.hs">3. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework4.hs">4. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework5.hs">5. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework6.hs">6. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework8.hs">7. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Homework11.hs">8. házi</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_zh1.hs">1. ZH</a></td>
+                        <td rowspan="4">Az összes zh kód. 30-40 perc alatt kellett ezeket általában megírni. Kaptunk
+                            elméleti és gyakorlati pontot is minden zh-n. Nagyon nem ajánlom, hogy ezekből tanulj,
+                            de ha máshol nem találsz segítséget, talán itt lesz valami.<br>(Amúgy ott a
+                            <span lang="en">StackOverflow</span>, az meg mindenben segít.)
+                        </td>
+                        <td rowspan="4">Mivel elvileg nektek már nem zh-s rendszer lesz, ezek nem túl hasznosak.
+                        </td>
+                    <tr>
+                        <td><a href="./files/codes/funkc_zh2.hs">2. ZH</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_zh3.hs">3. ZH</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_zh4.hs">4. ZH</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="./files/codes/funkc_Nagybeadando.hs">Nagybeadandó</a></td>
+                        <td>Ebből az anyagból egész sokat lehet tanulni szerintem. Ha átnézed vizsgára készülve és
+                            úgy érzed, hogy érted, nem lehet nagy baj.</td>
+                        <td>Az utolsó előtti függvényimplementációm mutatja, hogy is lehet használni a függvényeket
+                            egymás kiszámolására. Mind a kettő kellett, de egyből meg lehetett oldani.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <figure class="stay wide">
+            <a href="./media/haskell_hello_world.png"><img src="./media/haskell_hello_world-thumbnail.png"
+                    alt="Meme arról, hogy milyen bonyolult a Haskell nyelv felépítése"></a>
+        </figure>
+    </main>
+
+
+    <footer>
+        <a href="#">Ugrás az oldal tetejére</a>
+    </footer>
+</body>
+
+</html>

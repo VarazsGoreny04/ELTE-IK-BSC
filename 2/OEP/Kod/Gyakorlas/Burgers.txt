@@ -1,0 +1,4 @@
+Andris CheeseBurger 5 10 BigMac 9 8
+Sólyom ChickenBurger 3 10 FishMac 1 0
+Bori MacFarm 7 9 NagyKrumpli 1 10
+Ricsi Almáspite 1 1 Cola 1 9 Fagyi 69 420

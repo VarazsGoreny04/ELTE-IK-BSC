@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="../styles/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="../styles/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 500px)">
+    <link href="../styles/tablet.css" rel="stylesheet" type="text/css"
+        media="screen and (min-width: 500px) and (max-width: 1000px)">
+
+    <script src="../scripts/fontsizeswitch.js"></script>
+    <script src="../scripts/totopbutton.js"></script>
+    <script src="../scripts/email.js"></script>
+
+    <title>Kapcsolat - error503</title>
+</head>
+
+<body>
+    <header>
+        <nav class="hidden">
+            <a href="#content">Ugrás a tartalomra</a>
+            <button onclick="changeSize()">Betűméret váltása</button>
+        </nav>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/profile.png" alt="" id="profile-picture">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html">Főoldal</a>
+                        <a href="skills.html">Ismeretek</a>
+                        <a href="projects.html">Projektek</a>
+                        <a href="contact.html" id="current">&gt; Kapcsolat</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li id="flags">
+                        <a href="../hu/contact.html">
+                            <figure>
+                                <img src="../img/flags/hu_smol.png" alt="">
+                                <figcaption>HU</figcaption>
+                            </figure>
+                        </a>
+                        <a href="../en/contact.html">
+                            <figure>
+                                <img src="../img/flags/en_smol.png" alt="">
+                                <figcaption>EN</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="content">
+        <h1>Megtalálsz a következő platformokon</h1>
+        <div id="socials">
+            <a href="https://www.facebook.com/profile.php?id=100069562880652">
+                <figure>
+                    <img src="../img/socials/fb.png" alt="">
+                    <figcaption>Facebook</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.reddit.com/user/Error-503">
+                <figure>
+                    <img src="../img/socials/reddit.png" alt="">
+                    <figcaption>Reddit</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.linkedin.com/in/simon-vargha-6ab5a824b">
+                <figure>
+                    <img src="../img/socials/linkedin.png" alt="">
+                    <figcaption>LinkedIn</figcaption>
+                </figure>
+            </a>
+            <a href="https://www.discordapp.com/users/320253496697815040">
+                <figure>
+                    <img src="../img/socials/discord.png" alt="">
+                    <figcaption>Discord</figcaption>
+                </figure>
+            </a>
+            <a href="https://github.com/Error0503/">
+                <figure>
+                    <img src="../img/socials/github.png" alt="">
+                    <figcaption>GitHub</figcaption>
+                </figure>
+            </a>
+        </div>
+        <h1>vagy</h1>
+        <h1>írj emailt</h1>
+        <form>
+            <fieldset>
+                <label for="Subject">Tárgy</label>
+                <input type="text" id="Subject" name="Subject" maxlength="50" required>
+                <label for="Message">Üzenet</label>
+                <textarea id="Message" name="Message" rows="15" maxlength="5000" required></textarea>
+                <div>
+                    <label for="Business">Hivatalos</label>
+                    <input type="radio" name="type" id="Business">
+                    <label for="Personal">Személyes</label>
+                    <input type="radio" name="type" id="Personal">
+                </div>
+                <div>
+                    <label for="Urgent">Sürgős</label>
+                    <input type="checkbox" name="Urgent" id="Urgent">
+                </div>
+                <div id="formbuttons">
+                    <button onclick="sendEmail()">Küldés</button>
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <nav id="totop">
+            <button onclick="toTop()" id="topbutton" title="Top">&#11014;</button>
+        </nav>
+        <p>© Vargha Simon - 2023</p>
+    </footer>
+</body>
+
+</html>

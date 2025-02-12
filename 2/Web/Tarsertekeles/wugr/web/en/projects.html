@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../styles/styles.css" rel="stylesheet" type="text/css">
+    <link href="../styles/print.css" rel="stylesheet" type="text/css" media="print">
+    <link href="../styles/mobile.css" rel="stylesheet" type="text/css" media="screen and (max-width: 500px)">
+    <link href="../styles/tablet.css" rel="stylesheet" type="text/css"
+        media="screen and (min-width: 500px) and (max-width: 1000px)">
+
+    <script src="../scripts/fontsizeswitch.js"></script>
+    <script src="../scripts/totopbutton.js"></script>
+
+    <title>Projects - error503</title>
+</head>
+
+<body>
+    <header>
+        <nav class="hidden">
+            <a href="#content">Jump to content</a>
+            <button onclick="changeSize()">Change font size</button>
+        </nav>
+        <nav id="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="../img/profile.png" alt="" id="profile-picture">
+                </a>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                        <a href="skills.html">Skills</a>
+                        <a href="projects.html" id="current">&gt; Projects</a>
+                        <a href="contact.html">Contact me</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li id="flags">
+                        <a href="../hu/projects.html">
+                            <figure>
+                                <img src="../img/flags/hu_smol.png" alt="">
+                                <figcaption>HU</figcaption>
+                            </figure>
+                        </a>
+                        <a href="../en/projects.html">
+                            <figure>
+                                <img src="../img/flags/en_smol.png" alt="">
+                                <figcaption>EN</figcaption>
+                            </figure>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main id="content" class="projects">
+        <section>
+            <div class="project">
+                <article>
+                    <h1>Moonlander</h1>
+                    <p>
+                        MoonLander is a simple game written in C using the SDL2 library.<br>
+                        The game simulates a lunar lander that needs to safely land on the moon's surface.
+                        The terrain is randomly generated every time and the gravitational pull and fuel levels are
+                        determined by the level chosen by the player.
+                        A higher difficulty means more extreme terrain with fever places to land, higher gravity, and
+                        less fuel.<br>
+                        <br>
+                        <i>Features:</i>
+                    </p>
+                    <ul>
+                        <li>
+                            Randomly generated terrain
+                        </li>
+                        <li>
+                            Multiple levels, with increasing difficulty
+                        </li>
+                        <li>
+                            High scores
+                        </li>
+                    </ul>
+                    <br>
+                    <p>
+                        View repository on <a href="https://github.com/Error0503/MoonLander">GitHub</a>
+                    </p>
+                </article>
+                <figure>
+                    <video poster="../img/projects/MoonLander_thumbnail.png" controls>
+                        <source src="../img/projects/MoonLander_trailer.mp4" type="video/mp4">
+                        Your browser does not support the video tag!
+                    </video>
+                    <figcaption>
+                        <a href="video.xhtml">Video description</a>
+                    </figcaption>
+                </figure>
+            </div>
+            <aside>
+                <p>Tags: </p>
+                <p class="tag">C</p>
+                <p class="tag">SDL2</p>
+                <p class="tag">Game</p>
+            </aside>
+        </section>
+        <section>
+            <div class="project">
+                <article>
+                    <h1 lang="hu">Gazdálkodj Okosan</h1>
+                    <p>
+                        This is a C# implementation of the popular Hungarian board game "<span lang="hu">Gazdálkodj
+                            Okosan</span>".<br>
+                        The application tracks the players' bank balance as in newer iterations of the game the players
+                        not
+                        only use cash but also have a bank account where they can keep their money and even receive
+                        interest.<br>
+                        The project is a work in progress. The back-end is working, although it lacks many features like
+                        validation.<br>
+                        I have yet to start working on the front-end.<br>
+                        <br>
+                        View repository on <a href="https://github.com/Error0503/Gazdalkodj">GitHub</a>
+                    </p>
+                </article>
+                <a target="_blank" href="../img/projects/Gazdalkodj.png">
+                    <img src="../img/projects/Gazdalkodj_thumbnail.png" alt="Gazdálkodj Okosan" lang="hu">
+                </a>
+            </div>
+            <aside>
+                <p>Tags: </p>
+                <p class="tag">C#</p>
+                <p class="tag">App</p>
+            </aside>
+        </section>
+        <section>
+            <div class="project">
+                <article>
+                    <h1>Camo Tracker</h1>
+                    <p>
+                        CamoTracker is a Java-based desktop application that helps track weapon camo challenges in<br>
+                        Call of Duty: Modern Warfare II (2022).<br>
+                        The application has been developed using the Swing framework to provide an intuitive and
+                        user-friendly interface. The application allows gamers to
+                        track their progress towards completing weapon challenges and monitor their mastery
+                        challenges.<br>
+                        <br>
+                        <i>Features:</i>
+                    </p>
+                    <ul>
+                        <li>
+                            Weapon Challenge Tracking: The application allows users to track their progress towards
+                            completing weapon challenges.
+                        </li>
+                        <li>
+                            Mastery Challenge Tracking: CamoTracker also enables users to track their progress towards
+                            completing mastery challenges. Mastery challenges are more complex challenges that require
+                            users to complete all previous challenges to achieve a higher level of mastery.
+                        </li>
+                        <li>
+                            JSON Persistence: CamoTracker uses JSON format to persist data, enabling users to save and
+                            load their progress with ease.
+                        </li>
+                    </ul>
+                    <br>
+                    <p>
+                        <em>Requires Java SE Development Kit (JDK) version 17 or above.</em><br>
+                        Works on all modern PC operating systems.<br>
+                        <br>
+                        View repository on <a href="https://github.com/Error0503/CamoTracker">GitHub</a>
+                    </p>
+                </article>
+                <a target="_blank" href="../img/projects/CamoTracker.png">
+                    <img src="../img/projects/CamoTracker_thumbnail.png" alt="Camo Tracker">
+                </a>
+            </div>
+            <aside>
+                <p>Tags: </p>
+                <p class="tag">Java</p>
+                <p class="tag">Swing</p>
+                <p class="tag">App</p>
+            </aside>
+        </section>
+        <section>
+            <div class="project">
+                <article>
+                    <h1>Music Player</h1>
+                    <p>
+                        This is a Java-based music player application that allows you to play .wav files.
+                        The application is developed using only core Java and comes with a user-friendly interface using
+                        Swing.<br>
+                        <br>
+                        <i>Features:</i>
+                    </p>
+                    <ul>
+                        <li>Plays .wav files</li>
+                        <li>Simple and easy-to-use user interface</li>
+                        <li>Play, pause, and stop functionality</li>
+                        <li>Ability to seek through the song</li>
+                        <li>Displays the current playing song's title</li>
+                        <li>Repeat functionality</li>
+                    </ul>
+                    <br>
+                    <p>
+                        <i>Planned features:</i><br>
+                    </p>
+                    <ul>
+                        <li>More hotkeys</li>
+                        <li>Repeat song a set amount of times</li>
+                        <li>Dark mode</li>
+                        <li>Listen together on local network or online</li>
+                    </ul>
+                    <p>
+                        <em>Requires Java SE Development Kit (JDK) version 11 or above.</em><br>
+                        Works on all modern PC operating systems.<br>
+                        <br>
+                        View repository on <a href="https://github.com/Error0503/MusicPlayer">GitHub</a>
+                    </p>
+                </article>
+                <a target="_blank" href="../img/projects/MusicPlayer.png">
+                    <img src="../img/projects/MusicPlayer_thumbnail.png" alt="Music Player">
+                </a>
+            </div>
+            <aside>
+                <p>Tags: </p>
+                <p class="tag">Java</p>
+                <p class="tag">Swing</p>
+                <p class="tag">App</p>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <nav id="totop">
+            <button onclick="toTop()" id="topbutton" title="Top">&#11014;</button>
+        </nav>
+        <p>© Vargha Simon - 2023</p>
+    </footer>
+</body>
+
+</html>

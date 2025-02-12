@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fagy", "Fagy.csproj", "{DC5F694A-B23D-4F7D-8B53-A44C361B80FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC5F694A-B23D-4F7D-8B53-A44C361B80FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC5F694A-B23D-4F7D-8B53-A44C361B80FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC5F694A-B23D-4F7D-8B53-A44C361B80FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC5F694A-B23D-4F7D-8B53-A44C361B80FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0F4D8884-0A55-433E-8F74-ED8E474888FD}
+	EndGlobalSection
+EndGlobal

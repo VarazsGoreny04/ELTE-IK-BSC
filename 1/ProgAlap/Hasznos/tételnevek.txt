@@ -1,0 +1,9 @@
+Összegzés
+Megszámolás
+Maximum-kiválasztás
+Keresés
+Eldöntés
+Kiválasztás
+Másolás
+Kiválogatás
+Szétválogatás

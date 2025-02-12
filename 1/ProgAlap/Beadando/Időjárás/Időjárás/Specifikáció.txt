@@ -1,0 +1,4 @@
+BE: napSzam∈ℤ+, minHomerseklet∈ℤ^napSzam, maxHomerseklet∈ℤ^napSzam
+KI: dbFagy∈ℤ+
+Ef.: ∀i∈[1;napSzam]
+Uf.: (minHomersekletˇi ≤ 0) → dbFagy++

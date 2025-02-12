@@ -1,0 +1,107 @@
+a#current {
+    border-bottom: 3px solid black;
+}
+
+li#flags>a>figure {
+    transform: translate(25%, -0.5em);
+}
+
+li#flags>a>figure>img {
+    display: none;
+}
+
+nav#totop {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 8em;
+}
+
+main>* {
+    width: 100%;
+    margin-top: 1em;
+}
+
+main>p {
+    font-size: medium;
+}
+
+section {
+    width: fit-content;
+}
+
+section#skills {
+    flex-wrap: wrap;
+}
+
+section#skills>table:first-child {
+    margin: 0 0 3em;
+    width: 100%;
+}
+
+main.projects>section>div.project {
+    flex-direction: column;
+}
+
+main.projects>section>* {
+    text-align: left;
+    justify-content: start;
+}
+
+main.projects>section>*>* {
+    text-align: left;
+    justify-content: start;
+}
+
+div.project>figure {
+    width: 100%;
+}
+
+video,
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: black;
+    background: linear-gradient(90deg, black 20%, red 50%, black 80%);
+}
+
+div {
+    margin: 0;
+}
+
+div#socials {
+    margin: 0 auto;
+}
+
+div#socials>a {
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+div#socials>a>figure>img {
+    width: 70px;
+    height: auto;
+    margin-right: 10px;
+    /* TODO */
+}
+
+aside {
+    justify-content: left !important;
+}
+
+main.projects>section:nth-of-type(even)>div>article>ul {
+    direction: ltr;
+    padding-left: 2em;
+}
+
+main.projects>section>div>article>ul>li {
+    padding-bottom: 0.5em;
+}
+

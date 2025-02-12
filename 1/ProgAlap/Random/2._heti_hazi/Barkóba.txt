@@ -1,0 +1,4 @@
+Be: tipp∈[1;100]
+Ki: "Nyertél"∈𝕊
+Ef.: -
+Uf.: tipp=véletlen
