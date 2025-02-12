@@ -1,4 +1,0 @@
-Be: a,b€R
-Ki: x€R
-Ef.: -
-Uf.: x := (-b) / a

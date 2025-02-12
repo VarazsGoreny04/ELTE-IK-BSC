@@ -1,4 +1,0 @@
-Ronda Józsi,2020.06.09.,Kecskemét,barázdabillegető,5,2022.05.21.,Budapest,budapesti veréb,69,2023.03.11.,Halásztelek,fülesbagoly,1
-Jani a kemény,2021.05.30.,Borsodnádasd,tengelic,8,2023.02.04.,Halásztelek,fülesbagoly,2,2023.03.18.,Budapest,budapesti veréb,39,2023.04.09.,Budapest,budapesti veréb,38
-Kádár János,2022.08.23.,Pécs,mezei pacsirta,2,2022.10.24.,Köki,zöldike,12,2023.04.11.,Budapest,budapesti veréb,45,2023.04.11.,Borsodnádasd,tengelic,13
-Humor Herold,2022.08.23.,Halásztelek,fülesbagoly,2,2023.03.18.,Budapest,budapesti veréb,1,2023.04.09.,Halásztelek,fülesbagoly,1,2023.04.10.,Budapest,budapesti veréb,2,2023.04.11.,Budapest,budapesti veréb,3

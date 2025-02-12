@@ -1,8 +1,0 @@
-Kiértékelés: Átírási lépések sorozata (redukció)
-A programnak kiszámíthatónak és hatékonynak kell lennie
-A tisztán funkcionális nyelvekben nincs értékváltozás egy érték létrehozása után -> konstansokat hozunk létre
-Leibniz szabály: Egy matematikai egyenletben egyenlő értékek egymás helyére behelyettesíthetők
-Egyenlőségi érvelés: Egy változó értéke attól függ hogy mikor nézzük az időben
-Currying (Curry-féle módszer): Nincs többváltozós függvény Haskell-ben, hanem minden egyes változóra egy külön függvényt alkalmaz
-Mohóságjelölés: !-lel lehet jelölni azt hogy mohón kezdje el kiértékelni a függvényt a rendszer (Clean-ben így csinálják, Haskell-ben nem tudom)
-(Mohóságvizsgálat (Strictness analysis): Sparkle rendszer előadáson tanítják hogyan kell mohóságvizsgálatot csinálni)

@@ -1,5 +1,0 @@
-BE: ismertNapok€N, napokˇ(1..ismertNapok)€[0,1]^N, T:[0,1]->L
-KI: elsőVakációnap€N
-Ef.: -
-Uf.: Ei(1<=i<=ismertNapok): T(napokˇ(1..ismertNapok))
-     és EelsőVakációnap(1<=elsőVakációnap<=ismertNapok): T(napokˇelsőVakációnap)

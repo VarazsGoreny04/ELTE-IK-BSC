@@ -1,6 +1,0 @@
-Be: a,b∈ℝ
-Ki: x
-Ef.: -
-Uf.: a≠0 és b≠0 → x:=(-b)/a
-     a=0 és b=0 → x:=0
-     a=0 vagy b=0 → x:="Nincs megoldás"
