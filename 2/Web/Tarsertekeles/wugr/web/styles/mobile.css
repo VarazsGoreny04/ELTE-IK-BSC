@@ -1,0 +1,149 @@
+a#current {
+    border-bottom: 3px solid black;
+}
+
+nav#navbar>div.logo {
+    display:none;
+}
+
+nav#navbar:nth-child(2) {
+    margin-left: 0.25em;
+}
+
+nav#navbar>div>ul>li>a {
+    padding: 0;
+    margin: 1px;
+    color: black;
+    font-weight: bold;
+}
+
+nav#navbar>div:last-child {
+    padding-top: 1%;
+    padding-left: 1%;
+    padding-right: 2%;
+}
+
+li#flags>a {
+    border-left-style: solid;
+    border-left-color: black;
+    border-left-width: 2px;
+}
+
+img#profile-picture {
+    display: none;
+}
+
+li#flags>a>figure {
+    transform: translate(25%, -0.5em);
+}
+
+li#flags>a>figure>img {
+    display: none;
+}
+
+nav#navbar {
+    z-index: 9999;
+    padding: 0px;
+    color: black;
+    background-color: red;
+}
+
+nav#totop {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 3em;
+}
+
+main>* {
+    width: 100%;
+    margin-top: 1em;
+}
+
+main>p {
+    font-size: medium;
+}
+
+section {
+    width: fit-content;
+}
+
+section#skills {
+    flex-wrap: wrap;
+}
+
+section#skills>table:first-child {
+   margin: 0 0 3em;
+   width: 100%;
+}
+
+main.projects>section>div.project {
+    flex-direction: column;
+}
+
+main.projects>section>* {
+    text-align: left;
+    justify-content: start;
+}
+
+main.projects>section>*>* {
+    text-align: left;
+    justify-content: start;
+}
+
+div.project>figure {
+    width: 100%;
+}
+
+video,
+img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background: black;
+    background: linear-gradient(90deg, black 20%, red 50%, black 80%);
+}
+
+caption>* {
+    font-size: larger;
+}
+
+div {
+    margin: 0;
+}
+
+div#socials {
+    margin: 0 auto;
+    width: 100%;
+}
+
+div#socials>a {
+    padding-top: 10px;
+    padding-right: 5px;
+}
+
+div#socials>a>figure>img {
+    width: 3em;
+    height: auto;
+    margin-right: 0.5em;
+    /* TODO */
+}
+
+aside {
+    justify-content: left !important;
+}
+
+main.projects>section:nth-of-type(even)>div>article>ul {
+    direction: ltr;
+    padding-left: 2em;
+}
+
+main.projects>section>div>article>ul>li {
+    padding-bottom: 0.5em;
+}

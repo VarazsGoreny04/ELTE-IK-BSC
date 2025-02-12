@@ -1,0 +1,20 @@
+@import url("alap.css");
+@import url("ajanlat.css");
+
+body {
+    font-size: 1.75em;
+    background-color: white;
+    color: black;
+}
+
+header {
+    background-color: #ccc;
+    color: black;
+    font-size: 1.25em;
+}
+
+footer {
+    background-color: #ccc;
+    color: black;
+    font-size: 0.75em;
+}

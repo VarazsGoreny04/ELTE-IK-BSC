@@ -1,0 +1,9 @@
+- Jó az ha linkelem az ikonokat FontAwesome-ról?
+
+- Végül akkor megvan a HÁROM elrendezés?
+
+- Ha a táblázat furán jelenik meg nyomtatási nézetben az baj?
+
+- Mit jelent az, hogy csinálja külön stíluslapot a nyomtatási nézetnek?
+
+- Mit kezdjek a slider-ökkel hogy normális legyen a megjelenésük?

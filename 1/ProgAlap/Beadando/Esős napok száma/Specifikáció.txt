@@ -1,0 +1,10 @@
+BE: N∈ℤ, Napok∈ℤ^N
+KI: Össz∈ℤ
+Ef.: ∀i∈[1;N] : Napokˇi≥0
+Uf.: Össz=∑(ˇi=1)(^n)Napokˇi
+
+BE: N∈ℤ, Napok∈ℤ^N
+KI: EsőDb∈ℤ
+Ef.: ∀i∈[1;N]:Napokˇi≥0
+Uf.: EsőDb=∑(ˇi=1)(^n)1
+	   Napokˇi>0

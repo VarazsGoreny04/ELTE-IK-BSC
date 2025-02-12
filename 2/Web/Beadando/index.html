@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <title>Kezdőlap - Gólyafészek</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./scripts/styleswitcher.js"></script>
+    <script src="https://kit.fontawesome.com/36d9bec083.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./css/normal.css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="./css/capital.css" title="capital">
+    <style>
+        html {
+            background-image: url('./backgrounds/frontpage.png');
+            background-size: calc(100% / 3);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h2,
+        summary {
+            color: #16b377;
+        }
+
+        div.navbar a:hover,
+        div.navbar a:focus,
+        div.navbar_link-toggle:hover,
+        div.navbar_link-toggle:focus {
+            color: #004732;
+            background-color: #1cbfa9;
+        }
+
+        .key,
+        .navbar_link a.key {
+            color: #3dd638;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav id="jump_to-content">
+            <a href="#content">Ugrás a tartalomra</a>
+        </nav>
+
+
+        <div class="navbar">
+            <div class="navbar_link navbar_home-page">
+                <a href="./index.html" class="key"><i class="fa-solid fa-house-flag fa-2xl"></i></a>
+            </div>
+            <div class="navbar_link navbar_link-toggle">
+                <i class="fa-solid fa-bars fa-2xl"></i>
+                <script src="./scripts/navbar.js"></script>
+            </div>
+            <nav class="navbar_items">
+                <div class="navbar_link">
+                    <a href="./progalap.html">ProgAlap</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./funkcprog.html">FunkcProg</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./matalap.html">MatAlap</a>
+                </div>
+                <div class="navbar_link">
+                    <a href="./form.html">Üzenőfal</a>
+                </div>
+            </nav>
+        </div>
+
+
+        <nav id="visualhelp">
+            <a id="capital" href="#" onclick="setActiveStyleSheet('capital'); return false;">A+</a>
+            <a id="normal" href="#" onclick="setActiveStyleSheet('normal'); return false;">A-</a>
+        </nav>
+    </header>
+
+
+    <main id="content">
+        <h1>Minden, ami egyetem</h1>
+
+
+        <article>
+            <figure class="float">
+                <a href="./media/me.png"><img src="./media/me-thumbnail.png"
+                        alt="Trefiman Viktor Ádám (Trefi), az oldal készítője"></a>
+                <figcaption><span class="key">Trefiman Viktor Ádám</span> (Trefi), az oldal készítője</figcaption>
+            </figure>
+            <h2>Az oldal célja:</h2>
+            <p>
+                Web-fejlesztés beadandónak készült. :&#41;
+            </p>
+            <p>
+                Amúgy a weblap valódi célja, hogy információval szolgáljon az új hallgatóknak az első félév
+                tantárgyaihoz és segítse a beilleszkedést az új környezetbe.
+            </p>
+        </article>
+
+
+        <article>
+            <h2>Bevezető:</h2>
+            <p>
+                Kedves Gólyi! Köszöntelek az Egyetemen. Remélem az itt felsorolt dolgok nem elrettentenek a
+                tanulástól, hanem segítségedre válnak majd. Mivel az oldal írásakor még éppen csak elkezdődött a második
+                félévem, és még frissek az emlékek, megpróbállak minél gyorsabban bevonni téged is a tanulás menetébe.
+            </p>
+            <p>
+                Az oldalon részletes leírást találhatsz az első félévem tapasztalatairól, amik sok segítséget
+                nyújthatnak a kezdetekben. A honlap alapjaiban tárgyalja az összes olyan tárgyat, ami nehézséget
+                okozhat, az azokra való készülést és a jó időbeosztást. De először is haladjunk szépen sorban.
+            </p>
+        </article>
+
+
+        <article class="break">
+            <h2>Fogalmak:</h2>
+            <aside>
+                <p>
+                    Igen, tudom. Kicsit uncsi, viszont használni fogom őket a továbbiakban, szóval gondoltam már az
+                    elején tisztázok mindent. Amúgy már valószínű úgyis hallottad a nagyrészüket.
+                </p>
+            </aside>
+            <ol class="expressions">
+                <li>
+                    <span class="key">Szemeszter:</span> Egy egyetemi félév, a szorgalmi időszak kezdetétől a végéig.
+                </li>
+                <li>
+                    <span class="key">Előadás:</span> Olyan óra, amin (szinte) csak diktálják az anyagot. Limitált a
+                    visszakérdezés lehetősége, mivel több száz ember is hallgathatja.
+                </li>
+                <li>
+                    <span class="key">Gyakorlat:</span> Ahogy a neve is mutatja, az az óra, ahol az előadás anyagát
+                    gyakoroljátok feladatokon keresztül. Kis csoportokban tartják.
+                </li>
+                <li>
+                    <span class="key">Előadó:</span> Előadást tartó tanár.
+                </li>
+                <li>
+                    <span class="key">Gyakvez:</span> Gyakorlatvezető rövidítése. Elég egyértelmű, hogy ő a gyakorlatot
+                    tartó tanár.
+                </li>
+                <li>
+                    <span class="key">Hallgató:</span> Egyetemen tanuló diák.
+                </li>
+                <li>
+                    <span class="key">A épület:</span> A Lágymányosi kampusz északi épülete. A 7. emeletén található a
+                    "Bosch szoba", ami egy kis tér a liftekkel szemben. Kényelmes foteljei vannak és egy tévés asztal is
+                    található itt.
+                </li>
+                <li>
+                    <span class="key">C épület:</span> A Lágymányosi kampusz déli épülete. 7 szint felfele, 7 szint
+                    lefele, de az alsó három/négy szint víz alá van eresztve.
+                </li>
+                <li>
+                    <span class="key">B épület:</span> Na ez már lehet, hogy nem annyira nyilvánvaló. :D Az A és C
+                    épület közé eredetileg terveztek még egy épületet, csak mivel mocsaras a talaj, soha nem építették
+                    meg. Most egy ritkán fásított nagy füves placc van a helyén. Kedvelt találkozópont.
+                </li>
+                <li>
+                    <span class="key">AFK:</span> A Déli épület legendás könyvtára, ami inkább pihenésre szolgál a
+                    hallgatóknak a babzsákjaival, de az asztaloknál nagyon jól lehet csoportosan tanulni is.
+                </li>
+                <li>
+                    <span class="key">TTK (könyvtár):</span> A Déli épület másik könyvtára. Sokkal inkább könyvtár
+                    funkciót tölt be, mint az AFK, és halknak is kell lenni benne. Tökéletes a csendes környezet miatt a
+                    hatékony tanulásra.
+                </li>
+            </ol>
+        </article>
+
+
+        <figure class="float">
+            <a href="./media/hackerman.png"><img src="./media/hackerman-thumbnail.png"
+                    alt="Hackerman, a Kung Fury című filmből, kezén a Power Glove elnevezésű Nintendo kesztyűvel"></a>
+            <figcaption><span lang="en">Hackerman</span>, a <cite lang="en">Kung Fury</cite> című filmből</figcaption>
+        </figure>
+
+
+        <article class="break">
+            <h2>Tantárgyak:</h2>
+            <p>
+                Az első félévben 7db tantárgyad lesz, amik a következők:
+            </p>
+            <ol>
+                <li>Programozási alapismeretek (ProgAlap)</li>
+                <li>Funkcionális programozás (FunkcProg)</li>
+                <li>Matematika alapok (MatAlap)</li>
+                <li>Imperatív programozás (ImpProg)</li>
+                <li>Számítógépes rendszerek (SzámRend)</li>
+                <li>Innovatív vállalkozásmenedzsment (Innov) / Jogi ismeretek (Jog)</li>
+                <li>Egyetemi alapozó és tanulásmódszertani kurzus (Kurzus)</li>
+            </ol>
+            <p>
+                Ezek közül az első hármat részletesen tárgyalom külön oldalakon, mivel rengeteg olyan dolog van velük
+                kapcsolatban, ami nehézséget okozhat. Viszont vannak olyan dolgok, amik minden tárgyra érvényesek,
+                ezeket fogom most itt felsorolni.
+            </p>
+        </article>
+
+
+        <article>
+            <h2>Általános információk:</h2>
+            <p>
+                A legfontosabb dolog, hogy egy percre se higgyed azt, hogy egyszerű az egyetem. Épp ellenkezőleg. De
+                mielőtt még a kiiratkozást fontolgatnád, hadd mondjak még el pár dolgot, ami reményeim szerint elősegíti
+                majd az indulást és élvezetessé teszi az itt töltött időt.
+            </p>
+            <section>
+                <h3>1. lecke: <q>Barátkozzatok!</q> - Tatár Boglárka (Korsó) -</h3>
+                <p>
+                    Az egyetemet végig lehet vinni kapcsolatok nélkül, csak nem érdemes. Nagyon hamar meg lehet úgy unni
+                    az
+                    egészet. Ráadásul segítség lesztek egymásnak a tanulásban. Szóval, ha azt akarod, hogy élvezetes
+                    legyen
+                    az itt eltöltött idő, mindenképpen szerezz barátokat akár szociális vagy, akár nem.
+                </p>
+            </section>
+            <section>
+                <h3>2. lecke: Érdeklődj a tárgyak iránt</h3>
+                <p>
+                    Sokkal érdekfeszítőbb egy-egy funkcprog előadás akkor, ha leültél otthon (vagy még az egyetemen) és
+                    megértetted, hogy miről is szólt az a másfél óra. Egyszer csak azt veszed majd észre év közben, hogy
+                    erőfeszítés nélkül is megtanulsz mindent az adott tárgyra. Ráadásul azt viszont garantálhatom, hogy
+                    ha
+                    nem így teszel, abból a tárgyból nem fogod élvezni az órákat és nem is lesz benne olyan mély a
+                    tudásod.
+                </p>
+            </section>
+            <section>
+                <h3>3. lecke: Koncentrálj arra, ami nem megy</h3>
+                <p>
+                    Fontos szabály ez, amit, ha betartasz, valószínűleg sikeresen átmész majd mindenből. Egyetemen
+                    egyáltalán nem szégyen segítséget kérni. Sőt, sok esetben hátrány az, ha nem így teszel. Ezért is
+                    olyan
+                    fontos az 1. lecke. De persze a barátokon kívül rengeteg mindenkitől kaphatsz még tanácsokat,
+                    például
+                    tanároktól, a <span class="key">mentorodtól</span> vagy <span class="key">szeniorodtól</span>.
+                </p>
+            </section>
+        </article>
+
+        <article id="rumadai">
+            <h2>A hangulat megalapozásáért:</h2>
+            <video poster="./media/poster.png" controls="">
+                <source src="./media/Arsenium_Rumadai.mp4">
+                A böngésződ nem támogat videó megjelenítést!
+            </video>
+            <a href="./description.xhtml">Leírás</a>
+        </article>
+    </main>
+
+
+    <footer>
+        <a href="#">Ugrás az oldal tetejére</a>
+    </footer>
+</body>
+
+</html>

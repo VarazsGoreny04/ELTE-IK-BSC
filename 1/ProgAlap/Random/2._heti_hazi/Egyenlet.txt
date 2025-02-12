@@ -1,0 +1,4 @@
+Be: a,b∈ℝ
+Ki: x∈ℝ
+Ef.: (a=0 és b=0) vagy (a≠0 és b≠0)
+Uf.: x := (-b) / a

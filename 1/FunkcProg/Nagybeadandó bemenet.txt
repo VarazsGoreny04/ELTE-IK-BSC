@@ -1,0 +1,35 @@
+defendsAgainst (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) [map (\x -> (x, basic)) [0..4]]
+not $ defendsAgainst (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) [map (\x -> (x, bucketHead)) [0..4]]
+defendsAgainst (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) $ (map (\x -> (x, coneHead)) [0..4]) : (replicate 10 [] ++ [map (\x -> (x, coneHead)) [0..4]])
+not $ defendsAgainst (GameModel 0 [((a,0),defaultSunflower)|a<-[0..4]] []) [[(1, bucketHead)]]
+not $ defendsAgainst (GameModel 0 [((a,0),defaultPeashooter)|a<-[0..4]] []) [[(a, vaulting)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[5,6]] []) [[(a, vaulting)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[4,9]] []) [[(a, vaulting)|a<-[0..4]]]
+not $ defendsAgainst (GameModel 0 [((a,11),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,7),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,6),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+not $ defendsAgainst (GameModel 0 [((a,6),defaultPeashooter)|a<-[0..4]] []) [[(a, coneHead)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,1),defaultPeashooter)|a<-[0..4]] []) [[(a, coneHead)|a<-[0..4]]]
+not $ defendsAgainst (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[4,10]] []) [[(a, bucketHead)|a<-[0..4]]]
+defendsAgainst (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[1,4]] []) [[(a, bucketHead)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) [map (\x -> (x, basic)) [0..4]]
+not $ defendsAgainstI id (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) [map (\x -> (x, bucketHead)) [0..4]]
+defendsAgainstI id (GameModel 0 (map (\x -> ((x,0), Peashooter 2)) [0..4]) []) $ (map (\x -> (x, coneHead)) [0..4]) : (replicate 10 [] ++ [map (\x -> (x, coneHead)) [0..4]])
+not $ defendsAgainstI id (GameModel 0 [((a,0),defaultSunflower)|a<-[0..4]] []) [[(1, bucketHead)]]
+not $ defendsAgainstI id (GameModel 0 [((a,0),defaultPeashooter)|a<-[0..4]] []) [[(a, vaulting)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[5,6]] []) [[(a, vaulting)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[4,9]] []) [[(a, vaulting)|a<-[0..4]]]
+not $ defendsAgainstI id (GameModel 0 [((a,11),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,7),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,6),defaultPeashooter)|a<-[0..4]] []) [[(a, basic)|a<-[0..4]]]
+not $ defendsAgainstI id (GameModel 0 [((a,6),defaultPeashooter)|a<-[0..4]] []) [[(a, coneHead)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,2),defaultPeashooter)|a<-[0..4]] []) [[(a, coneHead)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,1),defaultPeashooter)|a<-[0..4]] []) [[(a, coneHead)|a<-[0..4]]]
+not $ defendsAgainstI id (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[4,10]] []) [[(a, bucketHead)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[1,5]] []) [[(a, bucketHead)|a<-[0..4]]]
+defendsAgainstI id (GameModel 0 [((a,b),defaultPeashooter)|a<-[0..4],b<-[1,4]] []) [[(a, bucketHead)|a<-[0..4]]]
+defendsAgainstI (\(GameModel s p _) -> GameModel s p []) (GameModel 0 (map (\x -> ((x,0), Peashooter 3)) [0..4]) []) [map (\x -> (x, bucketHead)) [0..4]]
+defendsAgainstI (const (GameModel 0 [] [])) (GameModel 0 [] []) (replicate 100 [(a,vaulting)|a<-[0..4]])
+defendsAgainstI (\gm->fromJust (tryPurchase gm (2,9) defaultCherryBomb)) (GameModel 150 [((a,0),defaultSunflower)|a<-[0..4]] []) (replicate 25 [(a,vaulting)|a<-[1..3]])
+not $ defendsAgainstI (\gm->fromJust (tryPurchase gm (1,9) defaultCherryBomb)) (GameModel 150 [((a,0),defaultSunflower)|a<-[0..4]] []) (replicate 25 [(a,vaulting)|a<-[1..3]])
+not $ defendsAgainstI (\(GameModel s _ zs)->(GameModel s [((4,4),defaultWalnut)] zs)) (GameModel 0 [] []) (replicate 100 [(a,basic)|a<-[0..4]])

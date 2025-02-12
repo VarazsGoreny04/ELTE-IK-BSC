@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Source+Code+Pro&family=Space+Mono&display=swap');
+
+main.projects>section:nth-child(odd)>div {
+    flex-direction: row;
+}
+
+main.projects>section:nth-child(even)>div {
+    flex-direction: row-reverse;
+}
+
+main.projects>section:nth-of-type(odd) {
+    text-align: left;
+}
+
+main.projects>section:nth-of-type(even) {
+    text-align: right;
+}
+
+main.projects>section:nth-of-type(odd)>div>article>ul {
+    margin-left: 2em;
+}
+
+main.projects>section:nth-of-type(even)>div>article>ul {
+    direction: rtl;
+    padding-right: 2em;
+}
+
+main.projects>section:nth-of-type(even)>aside {
+    justify-content: right;
+}
+
+main.projects>section>aside>p:first-child {
+    margin-right: 10px;
+}
+
+main>p {
+    font-size: large;
+}
+
+.hidden {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.hidden:focus-within {
+    color: black;
+    background-color: white;
+    position: static;
+    width: auto;
+    height: auto;
+}
+
+nav#totop {
+    display: none;
+    /* animation: drop-in 1s; */
+    position: fixed;
+    align-items: center;
+    right: 50px;
+    bottom: 50px;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    color: black;
+    background-color: red;
+}
+
+nav#totop>button {
+    border: none;
+    background: none;
+    font-size: x-large;
+}
+
+@keyframes drop-in {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+nav#totop>a {
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: black;
+    background-color: transparent;
+}
+
+nav#totop>a:visited {
+    color: black;
+    background-color: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Code Pro', monospace;
+    /* font-family: 'Space Mono', monospace;  */
+    /* font-family: 'Share Tech Mono', monospace; ❤️, ő :( */
+}
+
+html {
+    background: url('../img/backgrond.png');
+}
+
+a:has(+ img):hover {
+    border: 2px cyan;
+}
+
+a {
+    color: blue;
+    background-color: inherit;
+}
+
+a:visited {
+    color: mediumslateblue;
+    background-color: inherit;
+}
+
+a:hover {
+    color: rgb(80, 80, 80);
+    background-color: inherit;
+}
+
+a#current {
+    color: red;
+    background-color: inherit;
+    border-bottom: 1px solid red;
+}
+
+p.tag {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-right: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+li>a {
+    color: white;
+    background-color: inherit;
+}
+
+li#flags>* {
+    display: inline-flex;
+    text-align: center;
+    padding: 0 !important;
+}
+
+header>nav>div>ul {
+    list-style: none;
+}
+
+nav#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    color: white;
+    background-color: inherit;
+    z-index: 9999;
+}
+
+nav#navbar>div>ul>li>* {
+    padding: 2em;
+}
+
+nav#navbar>div>ul>li>a {
+    text-decoration: none;
+    color: white;
+    background-color: inherit;
+}
+
+nav#navbar>div>ul>li>a:hover {
+    color: gray;
+    background-color: inherit;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    color: inherit;
+    background: black;
+    background: linear-gradient(90deg, red 3%, black 15%);
+}
+
+body {
+    color: white;
+    background-color: inherit;
+}
+
+main {
+    width: 66%;
+    margin: 0 auto;
+    padding-top: 4em;
+    padding-bottom: 2em;
+    text-align: center;
+}
+
+main>* {
+    margin-top: 2em;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+}
+
+img#profile-picture {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+header>nav>div>ul>li>a>figure>img {
+    width: 30px;
+    height: 30px;
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    width: fit-content;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr>* {
+    padding: 10px;
+    width: fit-content;
+}
+
+section#skills {
+    border: none;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+section>table:first-child {
+    width: 50%;
+    margin-right: 3em
+}
+
+section>table {
+    margin: 0 auto 5em;
+    text-align: initial;
+}
+
+section>table:nth-of-type(odd)>caption {
+    text-align: left;
+}
+
+section>table:nth-of-type(even)>caption {
+    text-align: right;
+}
+
+section {
+    margin: 6em auto;
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    border: 1px solid white;
+}
+
+div.project {
+    margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+}
+
+div.project>div,
+div.project>article {
+    padding-bottom: 1em;
+}
+
+div.project>figure {
+    width: 33%;
+    margin-bottom: 0.5em;
+}
+
+video {
+    z-index: 1;
+}
+
+form {
+    margin: 2em auto;
+    display: inline-block;
+    border: 1px solid whitesmoke;
+    padding: 8px;
+    min-width: 350px;
+    font-weight: bold;
+}
+
+fieldset {
+    border: none;
+    display: grid;
+}
+
+textarea {
+    resize: none;
+}
+
+[type="submit"],
+[type="reset"],
+button[onclick="sendEmail()"] {
+    width: 25%;
+    height: 90%;
+}
+
+label {
+    text-align: start;
+}
+
+form>fieldset {
+    display: grid;
+}
+
+form>fieldset>div {
+    align-items: stretch;
+}
+
+aside {
+    display: flex;
+    align-items: center;
+}
+
+div#socials {
+    margin: 5% auto;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div#socials>a>figure>img {
+    height: 100px;
+    width: auto;
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    color: inherit;
+    background: black;
+    background: linear-gradient(90deg, black 40%, red 45%, red 55%, black 60%);
+    margin-top: 2em;
+    text-align: center;
+}

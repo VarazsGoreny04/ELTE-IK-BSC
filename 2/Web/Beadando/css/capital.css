@@ -1,0 +1,128 @@
+﻿@import url('./normal.css');
+
+body {
+	width: 90%;
+	max-width: 1100px;
+}
+
+/* ============= betumeretek ============= */
+
+body,
+input,
+textarea {
+	font-size: 1.5rem;
+}
+
+h1 {
+	font-size: 3.5rem;
+}
+
+h2,
+legend,
+summary {
+	font-size: 2.2rem;
+}
+
+th,
+h3 {
+	font-size: 1.8rem;
+}
+
+/* ============= betu formazas ============= */
+
+p {
+	line-height: 2rem;
+	text-indent: 2rem;
+}
+
+table {
+	line-height: 2rem;
+}
+
+/* ============= gyengenlato ============= */
+
+a#capital {
+	display: none;
+}
+
+a#normal {
+	display: block;
+}
+
+@media screen and (max-width: 1450px) {
+	body {
+		margin: 8rem auto;
+	}
+}
+
+/* ============= menusor ============= */
+
+.navbar {
+	font-size: 2.2rem;
+}
+
+.navbar_link,
+.navbar_link a {
+	text-decoration: none;
+	padding: 1.4rem 0.9rem 1.4rem 0.9rem;
+}
+
+div.navbar_link-toggle {
+	padding: 1.4rem;
+}
+
+@media screen and (max-width: 1100px) {
+
+	.navbar_items,
+	.navbar {
+		flex-direction: column;
+	}
+
+	.navbar_items {
+		display: none;
+		margin-left: 0;
+	}
+
+	.navbar_list-toggle {
+		display: flex;
+	}
+
+	.navbar_list-toggle .navbar_link {
+		display: block;
+	}
+
+	div.navbar_link-toggle {
+		display: initial;
+		position: absolute;
+		align-self: flex-end;
+		cursor: pointer;
+	}
+}
+
+/* ============= kepek ============= */
+
+figure.float {
+	float: none;
+	margin: 1rem auto 1rem auto;
+	max-width: 50%;
+	min-width: 18rem;
+}
+
+/* ============= tablazatok ============= */
+
+th,
+td {
+	height: 2.6rem;
+}
+
+/* ============= urlap ============= */
+
+.datafield td:first-child {
+	width: 8.5rem;
+}
+
+@media screen and (max-width: 1050px) {
+	.split {
+		column-count: 1;
+	}
+}

@@ -1,0 +1,4 @@
+Be: tipp€[1;100]
+Ki: "Nyertél"€$
+Ef.: -
+Uf.: tipp == random -> "Nyertél"
