@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="HOK.Gomb.MAUI.View.GamePage"
+			 Title="Gomb">
+
+	<Grid BackgroundColor="Gray">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="34.04"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="30"/>
+		</Grid.ColumnDefinitions>
+
+		<Grid Grid.Row="0" Grid.ColumnSpan="2" Margin="10,10,10,0"
+			  RowDefinitions="{Binding TableSize}" ColumnDefinitions="{Binding TableSize}"
+			  BindableLayout.ItemsSource="{Binding ObservableFields}">
+			
+			<BindableLayout.ItemTemplate>
+				<DataTemplate>
+					<Label
+						Grid.Row="{Binding Y}" Grid.Column="{Binding X}"
+						VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+						
+						<Label.Style>
+							<Style TargetType="Label">
+								<Style.Triggers>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Grass">
+										<Setter Property="Background" Value="LightGreen" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Wall">
+										<Setter Property="Background" Value="Gray" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Apple">
+										<Setter Property="Background" Value="Red" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Snake">
+										<Setter Property="Background" Value="DarkGreen" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Label.Style>
+					</Label>
+				</DataTemplate>
+			</BindableLayout.ItemTemplate>
+		</Grid>
+
+		<HorizontalStackLayout HorizontalOptions="Start" Grid.Row="2">
+			<Label Text="Lépésszám: " />
+			<Label Text="{Binding GameStepCount}" />
+		</HorizontalStackLayout>
+		<HorizontalStackLayout HorizontalOptions="End" Grid.Row="2">
+			<Label Text="Játékidő: " />
+			<Label Text="{Binding GameTime}" />
+		</HorizontalStackLayout>
+	</Grid>
+</ContentPage>

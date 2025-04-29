@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="ELTE.Snake.MAUI.View.MainPage"
+			 Title="Snake" IconImageSource="/View/snake.png"
+			 Height="260" MaximumHeightRequest="260" MinimumHeightRequest="260"
+			 Width="260" MaximumWidthRequest="260" MinimumWidthRequest="260">
+
+	<Grid BackgroundColor="Gray">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="200" />
+			<RowDefinition Height="*"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="*"/>
+			<ColumnDefinition Width="30"/>
+		</Grid.ColumnDefinitions>
+
+		<Label Text="Snake" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" FontFamily="Cascadia Code">
+			<Label.Style>
+				<Style TargetType="Label">
+					<Style.Triggers>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="You won :)">
+							<Setter Property="TextColor" Value="LawnGreen" />
+						</DataTrigger>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="You lost :(">
+							<Setter Property="TextColor" Value="Red" />
+						</DataTrigger>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="Snake">
+							<Setter Property="TextColor" Value="Black"/>
+						</DataTrigger>
+					</Style.Triggers>
+				</Style>
+			</Label.Style>
+		</Label>
+		<Button Text="Resume" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16"  Height="25" IsEnabled="{Binding IsGameLoaded}" Command="{Binding ResumeCommand}" />
+		<Slider x:Name="slider" Minimum="10" Maximum="20" Width="200" VerticalOptions="Center" HorizontalOptions="Center" Value="1" />
+		<Button Text="New game" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" Height="25" Command="{Binding NewGameCommand}" CommandParameter="slider.Value" />
+
+		<Label Grid.Row="1" Grid.Column="0" Text="Score:" HorizontalOptions="End" VerticalOptions="Center" Padding="1,1,1,1" />
+		<Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" Padding="1,1,1,1" Background="White" Text="{Binding Score}" />
+	</Grid>
+</ContentPage>

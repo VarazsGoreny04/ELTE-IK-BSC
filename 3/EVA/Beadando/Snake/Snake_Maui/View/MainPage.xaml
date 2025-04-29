@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="Snake_Maui.MainPage"
+			 Title="Snake" IconImageSource="/View/snake.png">
+
+	<Grid BackgroundColor="Gray">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="30"/>
+		</Grid.RowDefinitions>
+
+		<Label Grid.Row="0" VerticalOptions="Center" HorizontalOptions="Center" FontSize="24" FontFamily="Cascadia Code"  Text="{Binding Title}">
+			<Label.Style>
+				<Style TargetType="Label">
+					<Style.Triggers>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="Snake">
+							<Setter Property="TextColor" Value="Black" />
+						</DataTrigger>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="You won :)">
+							<Setter Property="TextColor" Value="LawnGreen" />
+						</DataTrigger>
+						<DataTrigger TargetType="Label" Binding="{Binding Title}" Value="You lost :(">
+							<Setter Property="TextColor" Value="Red" />
+						</DataTrigger>
+					</Style.Triggers>
+				</Style>
+			</Label.Style>
+		</Label>
+		<Button Grid.Row="1" Text="Resume" VerticalOptions="Center" HorizontalOptions="Center" FontSize="16" IsEnabled="{Binding IsGameLoaded}" Command="{Binding ResumeCommand}" />
+		<Button Grid.Row="2" Text="10×10" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" Command="{Binding NewGameCommand}" CommandParameter="10" />
+		<Button Grid.Row="3" Text="15×15" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" Command="{Binding NewGameCommand}" CommandParameter="15" />
+		<Button Grid.Row="4" Text="20×20" VerticalOptions="Center" HorizontalOptions="Center" FontSize="14" Command="{Binding NewGameCommand}" CommandParameter="20" />
+
+		<HorizontalStackLayout HorizontalOptions="End" Grid.Row="7">
+			<Label Text="Score: " />
+			<Label Text="{Binding Score}" />
+		</HorizontalStackLayout>
+	</Grid>
+</ContentPage>

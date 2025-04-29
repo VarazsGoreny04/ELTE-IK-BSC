@@ -1,0 +1,4 @@
+1. Minden kezdőállapothoz kell valamilyen viselkedést társítania a programnak
+2. Legalább egy hosszú legyen a sorozat és az első tag legyen a kezdőérték
+3. Az alfa maga az állapotsorozat, az összes lefutásra igaz legyen hogy a program vége előtt nem lehet hiba
+4. Véges hosszúnak kell lennie az állapotsornak és az összes tag az alap állapottérből kell hogy legyen vagy hibának kell lennie

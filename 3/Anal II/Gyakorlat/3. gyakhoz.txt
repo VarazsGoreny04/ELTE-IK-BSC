@@ -1,0 +1,1 @@
+Az inverz deriváltja kiszámolható az explicit alak nélkül

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+			 x:Class="Snake_Maui.GamePage"
+			 Title="Snake" IconImageSource="/View/snake.png">
+
+	<Grid BackgroundColor="Gray">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="*"/>
+			<RowDefinition Height="45"/>
+		</Grid.RowDefinitions>
+
+		<Grid Grid.Row="0" Margin="10,10,10,0"
+			  RowDefinitions="{Binding Rows}" ColumnDefinitions="{Binding Columns}"
+			  BindableLayout.ItemsSource="{Binding ObservableFields}">
+			
+			<BindableLayout.ItemTemplate>
+				<DataTemplate>
+					<Label
+						Grid.Row="{Binding Y}" Grid.Column="{Binding X}"
+						VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+						
+						<Label.Style>
+							<Style TargetType="Label">
+								<Style.Triggers>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Grass">
+										<Setter Property="Background" Value="LightGreen" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Wall">
+										<Setter Property="Background" Value="Gray" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Apple">
+										<Setter Property="Background" Value="Red" />
+									</DataTrigger>
+									<DataTrigger TargetType="Label" Binding="{Binding Field}" Value="Snake">
+										<Setter Property="Background" Value="DarkGreen" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Label.Style>
+					</Label>
+				</DataTemplate>
+			</BindableLayout.ItemTemplate>
+		</Grid>
+
+		<Grid Grid.Row="1" Margin="10,10,10,0">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+				<RowDefinition Height="*"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+				<ColumnDefinition Width="*"/>
+			</Grid.ColumnDefinitions>
+
+			<Button Grid.Row="0" Grid.Column="1" Command="{Binding DirCommand}" CommandParameter="0" />
+			<Button Grid.Row="1" Grid.Column="0" Command="{Binding DirCommand}" CommandParameter="1" />
+			<Button Grid.Row="1" Grid.Column="2" Command="{Binding DirCommand}" CommandParameter="3" />
+			<Button Grid.Row="2" Grid.Column="1" Command="{Binding DirCommand}" CommandParameter="2" />
+		</Grid>
+		
+		<HorizontalStackLayout HorizontalOptions="End" Grid.Row="2">
+			<Label Text="Score: " HorizontalOptions="Center" />
+			<Label Text="{Binding Score}" HorizontalOptions="Center" />
+		</HorizontalStackLayout>
+		<HorizontalStackLayout HorizontalOptions="Start" Grid.Row="2">
+			<Button Text="Pause" Command="{Binding PauseCommand}" />
+		</HorizontalStackLayout>
+	</Grid>
+</ContentPage>

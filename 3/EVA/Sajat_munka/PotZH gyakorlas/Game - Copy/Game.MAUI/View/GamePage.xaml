@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EVA.Game.MAUI.View.GamePage"
+             Title="Sudoku">
+    <Grid Margin="4" RowSpacing="8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!-- a gombokat a képernyő tetejére helyezzük -->
+        <Button Text="Új játék" Command="{Binding NewGameCommand}" Grid.Row="0" HorizontalOptions="Start" />
+        <Button Text="Szünet" Command="{Binding PauseCommand}" Grid.Row="0" HorizontalOptions="End" />
+
+		<Grid
+            Grid.Row="1"
+            BindableLayout.ItemsSource="{Binding Fields}"
+            RowDefinitions="{Binding GameTableRows}" ColumnDefinitions="{Binding GameTableColumns}"
+            ColumnSpacing="4" RowSpacing="4">
+
+			<BindableLayout.ItemTemplate>
+				<DataTemplate>
+					<Button
+                        Grid.Row="{Binding Y}"  Grid.Column="{Binding X}"
+                        Command="{Binding StepCommand}"
+                        CommandParameter="{Binding XY}"
+                        Padding="0"
+                        VerticalOptions="FillAndExpand"
+                        HorizontalOptions="FillAndExpand">
+
+						<Button.Style>
+							<Style TargetType="Button">
+								<Style.Triggers>
+									<DataTrigger TargetType="Button" Binding="{Binding Alive}" Value="True">
+										<Setter Property="BackgroundColor" Value="Black" />
+									</DataTrigger>
+									<DataTrigger TargetType="Button" Binding="{Binding Alive}" Value="False">
+										<Setter Property="BackgroundColor" Value="White" />
+									</DataTrigger>
+								</Style.Triggers>
+							</Style>
+						</Button.Style>
+					</Button>
+				</DataTemplate>
+			</BindableLayout.ItemTemplate>
+		</Grid>
+	</Grid>
+</ContentPage>
