@@ -1,0 +1,18 @@
+1. Feladat: Szomszédos műveletek cseréjével készítsünk 
+az alábbi ütemezésből soros ütemezést:
+
+R1(A); W1(A); R2(A); W2(A); R1(B); W1(B); R2(B); W2(B);
+R1(A); W1(A); R2(A); R1(B); W2(A); W1(B); R2(B); W2(B);
+R1(A); W1(A); R1(B); R2(A); W1(B); W2(A); R2(B); W2(B);
+R1(A); W1(A); R1(B); W1(B); R2(A); W2(A); R2(B); W2(B);
+
+T1;T2 Ütemezés
+
+T2;T1 nem lehet előállítani
+
+
+2. Feladat: megelőzési gráf
+
+S1: R1(A); R2(B); W2(A); R2(B); R3(A); W1(B); W3(A); W2(B);
+S2: R1(A); R2(A); R3(B); W1(A); W2(C); R2(B); W2(B); W1(C);
+S5: R1(A); R2(A); R1(C); R2(B); R3(A); R4(B); W1(A); W2(B);

@@ -1,0 +1,12 @@
+Veremautomata írása.
+Ugyanannyi a és b van a szóban és az üres is elfogadott.
+
+lˇa(u) = lˇb(u)
+
+1. #qa -> #aq
+2. #qb -> #bq
+3. aqa -> aaq
+4. bqb -> bbq
+5. aqb -> q
+6. bqa -> q
+7. #qε -> #q
