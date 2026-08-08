@@ -1,0 +1,13 @@
+﻿virsli 7
+szalonna 3
+ kolbasz 8
+  csulok 10
+farhat 1
+ alma  5
+    alma  4 
+  alma    3
+ alma   2
+alma    1
+ banan 5  
+    ananasz 6
+   bananasz 12

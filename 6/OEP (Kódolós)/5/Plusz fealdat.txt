@@ -1,0 +1,1 @@
+Írják meg maguktól a "Game Of Life"-ot vagy a Rubik kockát

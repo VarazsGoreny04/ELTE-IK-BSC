@@ -1,0 +1,49 @@
+1.
+Bevezető prezentáció
+Követelmények (Canvas)
+C# alapok "Hello, World!"-el
+Hotkey list
+Feladatok (class, private, public, protected, konstruktor, readonly)
+
+2.
+Különbség string[][] és string[,] között
+Property-k
+Enum-ok
+
+3.
+override ToString(), Equals()
+operátor felüldefiniálás
+kivételek kiváltása
+LinQ
+
+4.
+kivételek kezelése
+indexelő property
+
+5.
+automatikus tesztkörnyezet felépítése
+befecskendezés
+tizedespont vagy tizedesvessző
+
+6.
+Singleton
+szöveges állomány adatainak felsorolása, TextFile.dll, Copy to output directory
+Argumentumok megadása a Main-nek (args)
+szürke doboz tesztesetek az automatikus tesztkörnyezetbe
+
+7.
+Kapcsolatok a diagramokban
+Breakpoint és nyomkövetés
+String kezelés (Split(), Trim())
+virtual - override
+abstract
+
+8.
+Leszármaztatás
+virtual vs. abstract
+Primary constructor
+GitHub
+
+9-13.
+Tervezési minták
+Gyakorlás

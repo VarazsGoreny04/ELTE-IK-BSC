@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Tundra.Animal" Collapsed="true">
+    <Position X="8" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAgAEAAIAAAAEAAAABAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Animal.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.ArcticFox" Collapsed="true">
+    <Position X="9.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>ArcticFox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.ArcticHare" Collapsed="true">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArcticHare.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.Ecosystem">
+    <Position X="15.75" Y="0.5" Width="1.5" />
+    <AssociationLine Name="preys" Type="Tundra.Prey" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.75" Y="1.25" />
+        <Point X="14.27" Y="1.25" />
+        <Point X="14.27" Y="0.321" />
+        <Point X="5.062" Y="0.321" />
+        <Point X="5.062" Y="1.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQEQAAFAACAAAABAAQAAQAAAAEAAAA=</HashCode>
+      <FileName>Ecosystem.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="predators" />
+      <Field Name="preys" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Tundra.Lemming" Collapsed="true">
+    <Position X="2.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Lemming.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.Moose" Collapsed="true">
+    <Position X="4.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Moose.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.PolarBear" Collapsed="true">
+    <Position X="13.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>PolarBear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.Predator" Collapsed="true">
+    <Position X="11.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAAAAAAAABAAAAAQAAAAAgAA=</HashCode>
+      <FileName>Predator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.Prey" Collapsed="true">
+    <Position X="4.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Prey.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Tundra.SnowyOwl" Collapsed="true">
+    <Position X="11.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAACAAAAAAAAAAAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>SnowyOwl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
