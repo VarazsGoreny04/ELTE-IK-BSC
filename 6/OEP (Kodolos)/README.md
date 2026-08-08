@@ -1,0 +1,1 @@
+A saját anyagaim abból az időből amikor másodjára voltam OEP gyakorlatvezető. Át kellett dolgoznunk az anyagot, mert az alap tanterv borzasztóan magyaráz és rengeteg a hiba benne.
